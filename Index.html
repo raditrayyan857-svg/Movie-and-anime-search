@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Movie Search App</title>
+<link rel="stylesheet" href="style.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div class="container"> 
+<h1> MOVIE SEARCH App By Radit</h1>
+<div class="hero">
+
+<h2>
+🎬 Temukan Film Favoritmu
+</h2>
+
+<p>
+Cari ribuan film dari seluruh dunia dengan cepat
+</p>
+
+</div>
+
+  <div class="search-box">
+    
+  <input 
+  type="text"
+  id="movieInput"
+  placeholder="Search movie...">
+  </input>
+  
+
+  
+  <button onclick="searchMovie()">
+   <p>Search</p>
+   <img src="Search.svg" class="Search">
+</button>
+  </div>
+  
+<button id="favoriteBtn" class="favorite-btn">
+⭐ Lihat Favorite
+</button>
+
+<h3 class="section-title">🔥 Trending Movies</h3>
+<div id="movieResult"></div>
+
+<h3 class="section-title">🍿 Trending Anime</h3>
+<div id="animeResult"></div>
+
+
+<div class="pagination">
+
+<button onclick="prevPage()">
+  <p>PrevPage</p>
+  <img src="Double.svg" class="Prev">
+</button>
+<button onclick="nextPage()">
+  <p>NextPage</p>
+<img src="Double.svg" class="Next">
+</button>
+
+</div>
+<div id="movieModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close"
+onclick="closeModal()">
+✖
+</span>
+
+<div id="modalBody"></div>
+</div>
+</div>
+<div id="emptyState" class="empty-home">
+
+</div>
+    <div class="detail-wrapper">
+  <div class="movie-detail"></div>
+  </div>
+  <script src ="script.js"></script>
+  </body>
+  </html>
